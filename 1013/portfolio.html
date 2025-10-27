@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的作品集</title>
+  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+ 
+  <style>
+  
+    #home {
+      background: linear-gradient(135deg, #000000 40%, #212529 100%);
+      color: white;
+      text-align: center;
+    }
+
+  
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+
+
+    .card {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      border: 1px solid #333;
+    }
+
+
+    .btn-custom {
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+
+
+    .progress {
+      background-color: #2e2e2e;
+    }
+    .progress-bar {
+      background-color: #00bcd4;
+    }
+
+
+    .alert-dark-info {
+      background-color: #1f1f1f;
+      color: #0dcaf0;
+      border: 1px solid #0dcaf0;
+    }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+#about img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #0dcaf0;
+}
+
+
+#skills .card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0dcaf0;
+}
+
+
+#portfolio .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+  </style>
+</head>
+<body class="bg-black text-light">
+
+  <!-- 1. 導航列 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">陳孝誠</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">作品</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. Hero Section -->
+  <section id="home" class="py-5">
+    <div class="container py-5">
+      <h1 class="display-4 fw-bold mb-3">陳孝誠陳孝誠陳孝誠陳孝誠</h1>
+      <p class="lead mb-4 text-light">陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠。</p>
+      <a href="#portfolio" class="btn btn-light btn-custom me-2">查看作品</a>
+      <a href="#contact" class="btn btn-outline-light btn-custom">聯絡我</a>
+    </div>
+  </section>
+
+  
+
+  <!-- 3. 關於我 -->
+  <section id="about" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">關於我</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="1f4fc7cddefaa49247c9f5b535cc19f295c0cecc.jpeg" alt="個人照片" class="img-fluid rounded-circle shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="fw-bold text-info mb-3">陳孝誠陳孝誠陳孝誠陳孝誠</h3>
+          <p class="fs-5 text-light">陳孝誠陳孝誠陳孝誠陳孝誠。</p>
+          <p class="text-secondary">陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 技能展示 -->
+  <section id="skills" class="py-5 bg-black">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">技能展示</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card text-center p-3">
+            <img src="image2.png" class="mx-auto mb-3 rounded-circle" alt="HTML">
+            <h5 class="fw-bold">HTML / CSS <span class="badge bg-secondary">初學</span></h5>
+            <p class="text-light">響應式網頁排版。</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 30%">30%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-3">
+            <img src="image.png" >
+            <h5 class="fw-bold">multicharts技術指標，做交易訊號策略。 <span class="badge bg-info text-dark">進階</span></h5>
+            <p class="text-light">陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠陳孝誠。</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center p-3">
+            <img src="S__57360389.jpg" class="mx-auto mb-3 rounded-circle" >
+            <h5 class="fw-bold">電腦維修 <span class="badge bg-light text-dark">熟練</span></h5>
+            <p class="text-light">靈活運用分割磁區。</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%">50%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 作品集 -->
+  <section id="portfolio" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">作品集</h2>
+      <div class="row g-4">
+        <!-- 作品卡 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/800x600/000000/ffffff" class="card-img-top img-fluid" alt="作品1">
+            <div class="card-body">
+              <h5 class="card-title text-white">深色履歷網站</h5>
+              <p class="card-text text-light">以 Bootstrap 建立沉穩風格的個人履歷網站。</p>
+              <a href="#" class="btn btn-outline-light">查看詳情</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/800x600/000000/ffffff" class="card-img-top img-fluid" alt="作品2">
+            <div class="card-body">
+              <h5 class="card-title text-white">互動數據儀表板</h5>
+              <p class="card-text text-light">整合 Chart.js 與 API 的即時資料展示頁。</p>
+              <a href="#" class="btn btn-outline-light">查看詳情</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/800x600/000000/ffffff" class="card-img-top img-fluid" alt="作品3">
+            <div class="card-body">
+              <h5 class="card-title text-white">電商商品展示頁</h5>
+              <p class="card-text text-light">深色系電商展示頁，支援多裝置響應。</p>
+              <a href="#" class="btn btn-outline-light">查看詳情</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 聯絡表單 -->
+  <section id="contact" class="py-5 bg-black">
+    <div class="container">
+      <h2 class="text-center mb-5 text-white">聯絡我</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-light">姓名</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary" id="name" placeholder="請輸入姓名">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-light">Email</label>
+              <input type="email" class="form-control bg-dark text-white border-secondary" id="email" placeholder="請輸入 Email">
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label text-light">主旨</label>
+              <input type="text" class="form-control bg-dark text-white border-secondary" id="subject" placeholder="聯絡主題">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-light">訊息</label>
+              <textarea class="form-control bg-dark text-white border-secondary" id="message" rows="4" placeholder="請輸入您的訊息"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-info w-100">送出</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="mb-2">
+      <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+      <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
+      <a href="#" class="text-light"><i class="bi bi-github"></i> GitHub</a>
+    </div>
+    <p class="mb-0 text-secondary">&copy; 2025 陳孝誠. All rights reserved.</p>
+  </footer>
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
