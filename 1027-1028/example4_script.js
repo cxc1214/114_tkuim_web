@@ -12,7 +12,11 @@ function validateField(field) {
   let message = '';
   if (input.validity.valueMissing) {
     message = '此欄位為必填。';
-  } else if (input.validity.rangeUnderflow || input.validity.rangeOverflow) {
+  } 
+  else if (input.validity.rangeUnderflow) {
+    message = `年齡必須滿 ${input.min} 歲才能送出表單。`;
+  }
+  else if (input.validity.rangeUnderflow || input.validity.rangeOverflow) {
     message = `請輸入 ${input.min} 到 ${input.max} 之間的數字。`;
   }
   input.setCustomValidity(message);

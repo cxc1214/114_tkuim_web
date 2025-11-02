@@ -13,7 +13,14 @@ form.addEventListener('submit', (event) => {
   }
   const item = document.createElement('li');
   item.className = 'list-group-item d-flex justify-content-between align-items-center';
-  item.innerHTML = `${value} <button class="btn btn-sm btn-outline-danger" data-action="remove">刪除</button>`;
+  //item.innerHTML = `${value} <button class="btn btn-sm btn-outline-danger" data-action="remove">刪除</button>`;
+  item.innerHTML = `
+  <div>${value}</div>
+  <div>
+    <button class="btn btn-sm btn-outline-secondary" data-action="complete">完成</button>
+    <button class="btn btn-sm btn-outline-danger" data-action="remove">刪除</button>
+  </div>
+  `;
   list.appendChild(item);
   input.value = '';
   input.focus();
