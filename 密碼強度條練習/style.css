@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+
+}
+.password-container{
+    width: 300px;
+    text-align: center;
+    border: solid white;
+    padding: 16px;
+    border-radius: 10px;
+}
+#password{
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.strength-bar{
+    height: 100%;
+    transition: width .5s;
+
+
+}
+.strength-meter{
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#strength-text{
+    font-weight: hold;
+    color: gray;
+}
