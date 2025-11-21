@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>進階會員註冊</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>建立您的帳戶</h1>
+        <form id="signupForm" novalidate>
+
+            <div class="form-field">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required aria-describedby="name-error">
+                <p class="error-message" id="name-error" aria-live="polite"></p>
+            </div>
+
+
+            <div class="form-field">
+                <label for="email">電子郵件</label>
+                <input type="email" id="email" name="email" required aria-describedby="email-error">
+                <p class="error-message" id="email-error" aria-live="polite"></p>
+            </div>
+
+
+            <div class="form-field">
+                <label for="phone">手機</label>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" aria-describedby="phone-error">
+                <p class="error-message" id="phone-error" aria-live="polite"></p>
+            </div>
+
+
+            <div class="form-field">
+                <label for="password">密碼</label>
+                <input type="password" id="password" name="password" required minlength="8" aria-describedby="password-error">
+                <div id="password-strength-container">
+                    <div id="password-strength-bar"></div>
+                </div>
+                <div id="password-strength-text"></div>
+                <p class="error-message" id="password-error" aria-live="polite"></p>
+            </div>
+
+
+            <div class="form-field">
+                <label for="confirmPassword">確認密碼</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required aria-describedby="confirmPassword-error">
+                <p class="error-message" id="confirmPassword-error" aria-live="polite"></p>
+            </div>
+
+
+            <fieldset class="form-field" id="interests" aria-describedby="interests-error">
+                <legend>興趣標籤 (至少選 1 項)</legend>
+                <div class="interests-container" id="interestsContainer">
+                    <label><input type="checkbox" name="interests" value="sports"> 運動</label>
+                    <label><input type="checkbox" name="interests" value="music"> 音樂</label>
+                    <label><input type="checkbox" name="interests" value="movies"> 電影</label>
+                    <label><input type="checkbox" name="interests" value="tech"> 科技</label>
+                    <label><input type="checkbox" name="interests" value="travel"> 旅遊</label>
+                    <label><input type="checkbox" name="interests" value="food"> 美食</label>
+                </div>
+                <p class="error-message" id="interests-error" aria-live="polite"></p>
+            </fieldset>
+
+
+            <div class="form-field form-field-inline">
+                <input type="checkbox" id="terms" name="terms" required aria-describedby="terms-error">
+                <label for="terms">我已閱讀並同意服務條款</label>
+                <p class="error-message" id="terms-error" aria-live="polite"></p>
+            </div>
+
+
+            <div class="form-buttons">
+                <button type="submit" id="submitButton">
+                    <span class="btn-text">註冊</span>
+                    <span class="btn-loader"></span>
+                </button>
+                <button type="reset" id="resetButton">重設</button>
+            </div>
+        </form>
+    </div>
+    <script src="signup_form.js"></script>
+</body>
+</html>
