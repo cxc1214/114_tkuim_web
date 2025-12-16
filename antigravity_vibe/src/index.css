@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  /* Retro Palette */
+  --pixel-bg: #2d1b2e;
+  --pixel-text: #e0f8cf;
+  --pixel-primary: #b45252;
+  --pixel-secondary: #4b692f;
+  --pixel-accent: #d3a068;
+  --pixel-shadow: #1a1016;
+  
+  --pixel-border: 4px; /* Thick borders for pixel feel */
+  --font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--pixel-bg);
+  color: var(--pixel-text);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: none; /* Keep pixels crisp */
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+/* Scrollbar customization if needed */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--pixel-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--pixel-accent); 
+  border: 2px solid var(--pixel-bg);
+}
