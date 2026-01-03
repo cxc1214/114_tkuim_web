@@ -1,0 +1,15 @@
+
+
+services:
+  # MongoDB Database
+  db:
+    image: mongo:latest
+    container_name: inventory_mongo
+    ports:
+      - "27017:27017" # Map host port to container port
+    volumes:
+      - mongo-data:/data/db
+    restart: always
+
+volumes:
+  mongo-data:
